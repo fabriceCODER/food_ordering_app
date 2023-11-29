@@ -9,10 +9,10 @@ export default function Hero(){
           <p className="my-6 text-gray-500 text-sm">Pizza is the missing piece that makes every<br />day complete, a simple yet delicious joy in life</p>
           </div>
     
-          <div className="relative right-330">
+          <div className="relative top-[-20px]">
           <Image src={'/pizza.png'} layout={'fill'} objectFit={'contain'} alt={'pizza'} />
           </div>
-          <div className="absolute  right-0">
+          <div className="bg-white absolute right-0 -z-10">
                    <Image src={'/sallad2.png'}width={107} height={220}  alt={'sallad'} />
                    </div>
           <div className="mt-[-50px]">
