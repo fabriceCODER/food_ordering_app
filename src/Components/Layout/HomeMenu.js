@@ -12,7 +12,7 @@ export default function HomeMenu(){
                    <Image src={'/sallad2.png'}width={107} height={195}  alt={'sallad'} />
                    </div>
                </div>
-               <div className="text-center mt-[10px]"> 
+               <div className="text-center mb-4"> 
               
           <h3 className="uppercase text-gray-600 font-semibold leading-4">Check out</h3>
   <h3 className="text-primary font-bold text-4xl italic">Menu</h3>

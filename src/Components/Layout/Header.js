@@ -3,7 +3,7 @@ export default function Header(){
      return(
           <header className='flex items-center justify-between py-4'>
           <Link className='text-primary font-semibold text-2xl' href=''>ST PIZZA</Link>
-          <nav className='flex gap-8 text-gray-500 font-semibold'>
+          <nav className='flex gap-14 text-gray-500 font-semibold'>
             <Link href={''}>Home</Link>
             <Link href={''}>Menu</Link> 
             <Link href={''}>About</Link> 
