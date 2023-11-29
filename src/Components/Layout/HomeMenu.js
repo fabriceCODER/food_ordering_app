@@ -16,6 +16,13 @@ export default function HomeMenu(){
           <h3 className="uppercase text-gray-600 font-semibold leading-4">Check out</h3>
   <h3 className="text-primary font-bold text-4xl italic">Menu</h3>
 </div>    
+<div className="grid grid-cols-3 gap-4">
+    <div className="bg-gray-300 rounded-lg text-center">
+       <h4>Pizza</h4>
+
+    </div>
+     
+</div>
 
           </section>
         
