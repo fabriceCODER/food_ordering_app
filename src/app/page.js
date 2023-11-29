@@ -28,12 +28,13 @@ Explore our diverse menu featuring a variety of mouthwatering pizzas, from class
                 
     />
     <div>
-    <a className='text-4xl mt-8 underline text-gray-500' href='tel:+250 78 311 59 98'>+250 78 311 59 98
+    <a className='text-3xl mt-8 underline text-gray-500' href='tel:+250 78 311 59 98'>+250 78 311 59 98
     </a>
-    </div>
-    
-    
+    </div> 
    </section>
+   <footer className='border-t p-8 text-center text-gray-500 mt-16'>
+    &copy; 2023 All rights reserved
+   </footer>
    </>
   );
 }
