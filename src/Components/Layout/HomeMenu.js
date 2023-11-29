@@ -18,8 +18,9 @@ export default function HomeMenu(){
 </div>    
 <div className="grid grid-cols-3 gap-4">
     <div className="bg-gray-300 rounded-lg text-center">
-       <h4>Pizza</h4>
-
+       <h4 className="font-semibold my-4">Pepperoni Pizza</h4>
+       <p className="text-gray-500 text-sm">Pepperoni pizza is a widely enjoyed and iconic choice Pizza</p>
+       <button className="bg-primary text-white rounded-full px-4 py-2">Add to cart</button>
     </div>
      
 </div>
