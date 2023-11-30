@@ -1,17 +1,26 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { json } from "stream/consumers";
 
 export default function RegisterPage()
 {
    const[email, setEmail] = useState('');
    const[password, setPassword] = useState('');
+   function handleFormSubmit(ev){
+      ev.preventDefault();
+      fetch('/api/register',{
+         method: 'POST',
+         body:json.stringify({email, password}),
+         headers: {'Content-Type': 'application/json'},
+      });
+   }
    return(
       <section className="my-8">
          <h1 className="text-center text-primary text-4xl">
             Register
           </h1>
-          <form className="block max-w-xl max-auto items-center">      
+          <form className="block max-w-xl max-auto items-center" onSubmit={handleFormSubmit}>      
           <input type="email" 
           placeholder="Email" 
           value={email} onChange={ev => setEmail(ev.target.value)}/>
