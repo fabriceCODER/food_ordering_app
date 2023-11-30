@@ -1,12 +1,11 @@
-import Header from '@/Components/Layout/Header';
 import Hero from '@/Components/Layout/Hero';
 import HomeMenu from '@/Components/Layout/HomeMenu';
 import SectionHeader from '@/Components/Layout/SectionHeader';
+import Header from '@/Components/Layout/Header';
 
 export default function Home() {
   return (
    <>
-   <Header />
    <Hero />
    <HomeMenu />
    <section className='text-center my-16'>
@@ -32,9 +31,6 @@ Explore our diverse menu featuring a variety of mouthwatering pizzas, from class
     </a>
     </div> 
    </section>
-   <footer className='border-t p-8 text-center text-gray-500 mt-16'>
-    &copy; 2023 All rights reserved
-   </footer>
    </>
   );
 }
