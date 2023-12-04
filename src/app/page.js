@@ -1,10 +1,12 @@
 import Hero from '@/Components/Layout/Hero';
 import HomeMenu from '@/Components/Layout/HomeMenu';
 import SectionHeader from '@/Components/Layout/SectionHeader';
+import Header from '../Components/Layout/Header';
 
 export default function Home() {
   return (
    <>
+   <Header />
    <Hero />
    <HomeMenu />
    <section className='text-center my-16'>
