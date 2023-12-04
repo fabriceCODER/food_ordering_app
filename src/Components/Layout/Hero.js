@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Right from "../Icons/Right";
+import Link from "next/link";
 
 export default function Hero(){
      return(
@@ -8,7 +9,6 @@ export default function Hero(){
           <h1 className="text-4xl font-semibold">Everything<br /> is better<br /> with a <span className="text-primary">Pizza</span></h1>
           <p className="my-6 text-gray-500 text-sm">Pizza is the missing piece that makes every<br />day complete, a simple yet delicious joy in life</p>
           </div>
-    
           <div className="relative top-[-20px]">
           <Image src={'/pizza.png'} layout={'fill'} objectFit={'contain'} alt={'pizza'} />
           </div>
