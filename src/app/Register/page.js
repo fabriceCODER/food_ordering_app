@@ -17,12 +17,11 @@ export default function RegisterPage()
       });
    }
    return(
-      <section className="my-8">
+      <section className="my-8 ">
          <h1 className="text-center text-primary text-4xl">
             Register
           </h1>
-          <div className=" justify-center items-center flex">
-          <form className="block max-w-sm mx-2" onSubmit={handleFormSubmit}>
+          <form className="block max-w-sm mx-auto" onSubmit={handleFormSubmit}>
   <input
     type="email"
     placeholder="Email"
@@ -42,10 +41,6 @@ export default function RegisterPage()
     Login with Google
   </button>
 </form>
-
-          </div>
-         
-
       </section>
    )
 }
