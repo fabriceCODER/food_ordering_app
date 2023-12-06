@@ -4,8 +4,8 @@ import MenuItem from "../Menu/MenuItem";
 export default function HomeMenu(){
      return(
           <section className="">
-               <div className="absolute left-0 right-0 w-full justify-start" style={{'overflowX': "hidden"}}>
-                   <div className="absolute left-0 -top-2 text-left -z-10">
+               <div className="absolute left-0 right-0 w-full" style={{'overflowX': "hidden"}}>
+                   <div className="relative -top-[10px] left-0 -z-10">
                    <Image src={'/sallad1.png'} width={107} height={195} alt={'sallad'} />
                    </div>
                    <div className="absolute -top-[10px] right-0 -z-10">
