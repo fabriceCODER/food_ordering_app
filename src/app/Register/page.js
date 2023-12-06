@@ -11,7 +11,7 @@ export default function RegisterPage()
    function handleFormSubmit(ev){
       ev.preventDefault();
       fetch('/api/register',{
-         method: 'POST',
+         method:'POST',
          body:json.stringify({email, password}),
          headers: {'Content-Type': 'application/json'},
       });
