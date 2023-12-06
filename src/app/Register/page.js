@@ -21,7 +21,8 @@ export default function RegisterPage()
          <h1 className="text-center text-primary text-4xl">
             Register
           </h1>
-          <form className="flex flex-col items-center max-w-xl max-auto" onSubmit={handleFormSubmit}>
+          <div className=" justify-center items-center flex">
+          <form className="block max-w-sm mx-2" onSubmit={handleFormSubmit}>
   <input
     type="email"
     placeholder="Email"
@@ -41,6 +42,9 @@ export default function RegisterPage()
     Login with Google
   </button>
 </form>
+
+          </div>
+         
 
       </section>
    )
