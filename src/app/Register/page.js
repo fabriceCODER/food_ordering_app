@@ -8,7 +8,7 @@ export default function RegisterPage()
 {
    const[email, setEmail] = useState('');
    const[password, setPassword] = useState('');
-   function handleFormSubmit(ev){
+   function handleFormSubmit(ev){ 
       ev.preventDefault();
       fetch('/api/register',{
          method:'POST',
