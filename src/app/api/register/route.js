@@ -1,7 +1,6 @@
-import { removeListener } from "process";
+import mongoose from "mongoose";
+import User from "./User"; // Assuming you have a User model file
 
-export function POST(req){
-     return(
-         Response.json("ok")
-     );
-}
+export async function POST(req) {
+  try {
+    const body = await req.json();
