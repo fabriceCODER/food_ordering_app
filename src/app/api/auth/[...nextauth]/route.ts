@@ -18,8 +18,7 @@ const handler = nextAuth({
                  
                    return null
            
-                  
-                 }
+                      }
                }
              })
      ]
