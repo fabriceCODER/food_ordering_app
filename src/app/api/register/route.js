@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import User from "./User"; // Assuming you have a User model file
+import User from './user'
 
 export async function POST(req) {
   try {
