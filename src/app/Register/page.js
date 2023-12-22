@@ -1,22 +1,32 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { use, useState } from "react";
 
 
 export default function RegisterPage()
 {
    const[email, setEmail] = useState('');
    const[password, setPassword] = useState('');
+   const[createdUser, setCreatingUser] = useState(false);
+   const[userCreated, setUserCreated] = useState(false);
+   const[error, setError] = useState(false);
    
-   function handleFormSubmit(ev){ 
+   async function handleFormSubmit(ev) { 
 
       ev.preventDefault();
-      fetch('/api/register',  
+      setCreatingUser(true);
+      try { 
+       await fetch('/api/register',  
       {
          method:'POST',
          body:json.stringify({email, password}),
          headers: {'Content-Type': 'application/json'},
       });
+      setCreatingUser(false);
+      setUserCreated(true);
+   }catch(e){
+      setError(true);
+   }
    }
    return(
       <section className="my-8 ">
@@ -49,5 +59,4 @@ export default function RegisterPage()
   </button>
 </form>
       </section>
-   )  
-}
+   )
