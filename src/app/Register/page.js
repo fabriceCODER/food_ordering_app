@@ -7,7 +7,7 @@ export default function RegisterPage()
 {
    const[email, setEmail] = useState('');
    const[password, setPassword] = useState('');
-   const[createdUser, setCreatingUser] = useState(false);
+   const[creatingUser, setCreatingUser] = useState(false);
    const[userCreated, setUserCreated] = useState(false);
    const[error, setError] = useState(false);
    
@@ -28,7 +28,9 @@ export default function RegisterPage()
       setError(true);
    }
    }
+   }
    return(
+      <>
       <section className="my-8 ">
          <h1 className="text-center text-primary text-4xl">
             Register
@@ -39,14 +41,18 @@ export default function RegisterPage()
     placeholder="Email"
     value={email}
     onChange={(ev) => setEmail(ev.target.value)}
+    disabled={creatingUser}
   />
   <input
     type="password"
     placeholder="Password"
     value={password}
     onChange={(ev) => setPassword(ev.target.value)}
+    disabled={creatingUser}
   />
-  <button type="submit">Register</button>
+  <button type="submit" disabled={creatingUser}>
+   Register
+   </button>
   <div className="my-4 text-center text-gray-500">
    or login with provider</div>
   <button className="flex border gap-4 px-2
@@ -59,4 +65,5 @@ export default function RegisterPage()
   </button>
 </form>
       </section>
-   )
+      </>
+   );
