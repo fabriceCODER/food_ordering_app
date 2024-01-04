@@ -19,7 +19,6 @@ export default function Home() {
   <p>
 Explore our diverse menu featuring a variety of mouthwatering pizzas, from classic Margherita to bold and innovative combinations that push the boundaries of traditional pizza-making. Our commitment to freshness and authenticity ensures that each bite is a celebration of the rich heritage and passion we pour into every pizza we serve. Whether you're a fan of thin crust, deep-dish, or somewhere in between, our pizza selection caters to every preference. Join us on this culinary adventure and experience the art of pizza perfection like never before. From our kitchen to your table, savor the extraordinary at <span className='text-primary'>ST PIZZA</span>.</p>
     </div>
-  
    </section>
    <section className='text-center my-8'>
     <SectionHeader subHeader={'Don\'t hesitate'}

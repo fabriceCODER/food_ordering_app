@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-      <main className="max-w-full px-5 max-auto">
+      <main className="max-w-full px-8 max-auto">
         <Header />
         {children}
         <footer className='border-t p-8 text-center text-gray-500 mt-16'>
