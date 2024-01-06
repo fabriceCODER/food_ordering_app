@@ -4,13 +4,13 @@ import bcrypt from 'bcrypt';
 const userSchema = new Schema({
      email: {type: String, required: true, unique: true},
      password: {
-          type: String, 
+          type: String,
           required: true, 
            validate:pass => {
                 if (!pass?.length || pass.length < 5){
                     new Error('Password must be at least 5 characters');
-                    return false; 
-          } 
+                    return false;
+          }
         },
     },
 }, {timestamps: true});
