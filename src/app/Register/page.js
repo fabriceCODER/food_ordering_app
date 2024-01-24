@@ -52,7 +52,7 @@ export default function RegisterPage() {
             value={password}
             onChange={(ev) => setPassword(ev.target.value)}
             disabled={creatingUser}
-          />
+          /> 
           <button type="submit" disabled={creatingUser}>
             Register
           </button>
