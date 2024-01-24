@@ -8,7 +8,7 @@ export default function LoginPage(){
      return(
           <>
           <section className="my-8">
-            <h1 className="text-center text-primary text-4xl">Sign in</h1>
+            <h1 className="text-center text-primary text-4xl">Login</h1>
             <form className="block max-w-sm mx-auto">
               <input
                 type="email"
