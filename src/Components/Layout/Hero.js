@@ -16,7 +16,7 @@ export default function Hero(){
         alt="pizza"
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
       />
-    </div>
+      </div>
           <div className="bg-white absolute right-0 -z-10">
                    <Image src={'/sallad2.png'}width={107} height={220}  alt={'sallad'} />
                    </div>
